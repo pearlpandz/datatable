@@ -1,0 +1,37 @@
+{
+  "name": "datatable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "style": "dist/styles.css",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && mkdir dist &&  babel src -d dist --copy-files"
+  },
+  "author": "Muthupandi Velmurugan",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.22.9",
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.2"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.2"
+  },
+  "dependencies": {
+    "moment": "^2.29.4",
+    "react-calendar": "^4.6.0"
+  }
+}
