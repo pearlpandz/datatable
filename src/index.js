@@ -96,7 +96,7 @@ function DataTable(props) {
         clearFilter={updateClearFilters}
         actions={actions}
         onCellClick={onCellClick}
-        loading={loading} 
+        loading={loading}
         status={status}
         error={error}
         refetch={refetch}
