@@ -321,7 +321,7 @@ function TablecolumnFilter(props) {
                 <div className='filter-dropdown' style={{
                     position: 'fixed',
                     display: show ? "block" : 'none',
-                    left: page?.pageX,
+                    // left: page?.pageX,
                     top: 40,
                     height: datatype !== "boolean" ? "250px" : "auto"
                 }}>

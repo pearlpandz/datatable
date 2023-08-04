@@ -383,7 +383,11 @@ function DTable(props) {
           {
             _columns?.filter(a => a.visible)?.map(({ field, filterType, isLink, width }, tbodyIndex) => {
               return (
-                <td key={tbodyIndex} className='table-data' style={{ minWidth: width, width: width, maxWidth: width }} onClick={() => onCellClick(field, row)}>
+                <td key={tbodyIndex} className='table-data' style={{ minWidth: width, width: width, maxWidth: width }} onClick={() => {
+                  if(onCellClick) {
+                    onCellClick(field, row)
+                  }
+                }}>
                   <BodyTemplate data={row[field]} datatype={filterType} link={isLink} />
                 </td>
               );

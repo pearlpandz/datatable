@@ -21,7 +21,10 @@ function Sorting(props) {
     else if (sortOrder === -1) {
       order = 0;
     }
-    setSorting({ sortOrder: order, sortBy: column });
+
+    if(setSorting) {
+      setSorting({ sortOrder: order, sortBy: column });
+    }
 
   }
 
