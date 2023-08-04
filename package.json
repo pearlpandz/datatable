@@ -1,6 +1,6 @@
 {
   "name": "dt-table",
-  "version": "0.0.1",
+  "version": "0.0.1-patch",
   "description": "```html     <DataTable         dataKey='entity_id'           data={DATA}         columns={COLUMNS}          sortable         sortmode=\"multi\"          filterable         filters={FILTERS}         rows={25}         totalRecords={25}         resizableColumns      /> ```",
   "main": "./dist/index.js",
   "style": "dist/styles.css",
@@ -27,7 +27,11 @@
     "@rollup/plugin-image": "^3.0.2",
     "@rollup/plugin-node-resolve": "^15.1.0",
     "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
     "path": "^0.12.7",
+    "postcss-cssnext": "^3.1.1",
+    "postcss-nested": "^6.0.1",
+    "postcss-simple-vars": "^7.0.1",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2"

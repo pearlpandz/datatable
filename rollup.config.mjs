@@ -2,10 +2,15 @@ import external from 'rollup-plugin-peer-deps-external';
 import { babel } from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
-import postcss from 'rollup-plugin-postcss';
 import autoprefixer from 'autoprefixer';
 import image from '@rollup/plugin-image';
-import React from 'react';
+
+// PostCSS plugins
+import postcss from 'rollup-plugin-postcss';
+ import simplevars from 'postcss-simple-vars';
+ import nested from 'postcss-nested';
+ import cssnext from 'postcss-cssnext';
+ import cssnano from 'cssnano';
 
 export default [
   {
@@ -27,11 +32,13 @@ export default [
         moduleDirectories: ['node_modules']
       }),
       postcss({
-        plugins: [autoprefixer()],
-        sourceMap: true,
-        extract: true,
-        minimize: true,
-        extensions: ['.css', '.scss']
+        plugins: [
+          simplevars(),
+          nested(),
+          cssnext({ warnForDuplicates: false, }),
+          cssnano(),
+        ],
+        extensions: ['.css']
       }),
       image()
     ],
