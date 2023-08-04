@@ -1,7 +1,7 @@
 {
-  "name": "datatable",
-  "version": "1.0.0",
-  "description": "",
+  "name": "dt-table",
+  "version": "0.0.1",
+  "description": "```html     <DataTable         dataKey='entity_id'           data={DATA}         columns={COLUMNS}          sortable         sortmode=\"multi\"          filterable         filters={FILTERS}         rows={25}         totalRecords={25}         resizableColumns      /> ```",
   "main": "./dist/index.js",
   "style": "dist/styles.css",
   "files": [
@@ -40,5 +40,28 @@
   "dependencies": {
     "moment": "^2.29.4",
     "react-calendar": "^4.6.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pearlpandz/datatable.git"
+  },
+  "keywords": [
+    "datatable",
+    "sorting",
+    "table",
+    "filter",
+    "table",
+    "customization",
+    "pagination",
+    "show",
+    "no",
+    "of",
+    "records",
+    "per",
+    "page"
+  ],
+  "bugs": {
+    "url": "https://github.com/pearlpandz/datatable/issues"
+  },
+  "homepage": "https://github.com/pearlpandz/datatable#readme"
 }
